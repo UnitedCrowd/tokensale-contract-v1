@@ -5,7 +5,7 @@ import './LimitedTransferToken.sol';
 import './ISmartToken.sol';
 
 /**
-    BancorSmartToken
+   SmartToken
 */
 contract LimitedTransferSmartToken is MintableToken, ISmartToken, LimitedTransferToken {
 
