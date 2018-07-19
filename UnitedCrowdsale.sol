@@ -116,14 +116,7 @@ contract UnitedCrowdsale is FinalizableCrowdsale {
         if (now < (startTime.add(3 days))) {return 900;}
         if (now < (startTime.add(4 days))) {return 855;}
         if (now < (startTime.add(5 days))) {return 810;}
-        if (now < (startTime.add(6 days))) {return 770;}
-        if (now < (startTime.add(7 days))) {return 730;}
-        if (now < (startTime.add(8 days))) {return 690;}
-        if (now < (startTime.add(9 days))) {return 650;}
-        if (now < (startTime.add(10 days))) {return 615;}
-        if (now < (startTime.add(11 days))) {return 580;}
-        if (now < (startTime.add(12 days))) {return 550;}
-        if (now < (startTime.add(13 days))) {return 525;}
+    
 
         return rate;
     }
