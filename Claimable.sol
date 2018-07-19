@@ -13,7 +13,7 @@ import './Ownable.sol';
 contract Claimable is Ownable {
     address public pendingOwner;
 
-    /**
+     /**
      * @dev Modifier throws if called by any account other than the pendingOwner.
      */
     modifier onlyPendingOwner() {
