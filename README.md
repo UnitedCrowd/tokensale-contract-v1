@@ -1,5 +1,5 @@
 ![UnitedCrowd](https://staging.unitedcrowd.com/github/uc-Logos-gr-l.jpg)
-# Tokensale Contract
+# Tokensale Contract V1.1 Update
 The Tokensale contract is an ethereum ERC20 based smart contract designed to ...
 - Contract requires `....`
 - Contract based on `solidity ^0.4.25`
