@@ -22,6 +22,7 @@ Bounty is program which is used for finding the bugs from sc. contract will give
 Which is used when more then one admins in team. While the transaction from contract multisignatures are required.
 
 ## Function Overview
+Main functions from `UnitedCrowdsale.sol`
 
 Function | Description
 --- | ---
