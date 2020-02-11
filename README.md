@@ -22,7 +22,7 @@ Bounty is program which is used for finding the bugs from sc. contract will give
 Which is used when more then one admins in team. While the transaction from contract multisignatures are required.
 
 ## Function Overview
-Main functions from `UnitedCrowdsale.sol`
+### Main functions from `UnitedCrowdsale.sol`
 
 Function | Description
 --- | ---
@@ -34,4 +34,18 @@ deleteGrantee() | deletes entries from the grants list.
 setFiatRaisedConvertedToWei() | Set funds collected outside the crowdsale in wei.
 claimTokenOwnership(), claimRefundVaultOwnership() | Accepts new ownership on behalf of the UnitedCrowdsale contract. This can be used, by the token sale contract itself to claim back ownership of the UnitedSmartToken contract.
 buyTokensWithGuarantee() | Buy tokens with guarantee
+
+### Main functions from `UnitedVestingTrustee.sol`
+Vesting functions.
+
+Function | Description
+--- | ---
+grant() | Grant tokens to a specified address; **Vars:** `_to address`: The address to grant tokens to. `_value uint256`: The amount of tokens to be granted. `_start uint256`: The beginning of the vesting period; `_cliff uint256`: Duration of the cliff period; `_end uint256`: determines vesting period; `_revokable bool` Whether the grant is revokable or not;
+revoke() | Revoke the grant of tokens of a specifed address.
+vestedTokens() | Calculate the total amount of vested tokens of a holder at a given time.
+calculateVestedTokens() | Calculate amount of vested tokens at a specifc time.
+unlockVestedTokens() | Unlock vested tokens and transfer them to their holder.
+
+
+
 
