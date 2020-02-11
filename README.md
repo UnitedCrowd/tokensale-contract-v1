@@ -7,6 +7,16 @@ The Tokensale contract is an ethereum ERC20 based smart contract designed to ini
 
 ## Feature list
 ### Token ownership & transfer
+Allows the current owner to transfer control of the contract to a newOwner.
+newOwner The address to transfer ownership to.
+
 ### Vesting incl. the release vested tokens
+A token holder contract that can release its token balance gradually like a typical vesting scheme, with a cliff and vesting period. Optionally revocable by the owner.
+
+The vesting schedule is time-based (i.e. using block timestamps as opposed to e.g. block numbers), and is therefore sensitive to timestamp manipulation (which is something miners can do, to a certain degree). Therefore, it is recommended to avoid using short time durations (less than a minute). Typical vesting schemes, with a cliff period of a year and a duration of four years, are safe to use (`solhint-disable`, `not-rely-on-time`).
+
 ### Bounty
+Bounty is program which is used for finding the bugs from sc. contract will give the bounty tokens and user have to claim it after certain perioud of time.
+
 ### Multsig functions
+Which is used when more then one admins in team. While the transaction from contract multisignatures are required.
