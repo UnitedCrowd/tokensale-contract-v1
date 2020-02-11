@@ -15,9 +15,7 @@ A token holder contract that can release its token balance gradually like a typi
 
 The vesting schedule is time-based (i.e. using block timestamps as opposed to e.g. block numbers), and is therefore sensitive to timestamp manipulation (which is something miners can do, to a certain degree). Therefore, it is recommended to avoid using short time durations (less than a minute). Typical vesting schemes, with a cliff period of a year and a duration of four years, are safe to use (`solhint-disable`, `not-rely-on-time`).
 
-
-
-![Vesting](./docs/vesting.png)
+![Vesting](./docs/vesting-inline.png)
 > [view vesting](./docs/vesting.png "View vesting")
 
 
