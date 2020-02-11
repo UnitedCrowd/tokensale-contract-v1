@@ -20,3 +20,15 @@ Bounty is program which is used for finding the bugs from sc. contract will give
 
 ### Multsig functions
 Which is used when more then one admins in team. While the transaction from contract multisignatures are required.
+
+Function | Description
+--- | ---
+onlyWhileSale() | Modifier,  throws if called not during the crowdsale time frame
+getRate() | returns the rate in UTC per 1 ETH according to the time of the tx and the UCT pricing program.
+finalization() | grants bonuses for the pre crowdsale grantees; enables, re-enables and disables transfers; Enable ETH refunds and token claim; `transferOwnership`
+addUpdateGrantee() | Adds/Updates address and token allocation for token grants
+deleteGrantee() | deletes entries from the grants list.
+setFiatRaisedConvertedToWei() | Set funds collected outside the crowdsale in wei.
+claimTokenOwnership(), claimRefundVaultOwnership() | Accepts new ownership on behalf of the UnitedCrowdsale contract. This can be used, by the token sale contract itself to claim back ownership of the UnitedSmartToken contract.
+buyTokensWithGuarantee() | Buy tokens with guarantee
+
