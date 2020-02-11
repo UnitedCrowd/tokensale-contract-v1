@@ -21,6 +21,8 @@ Bounty is program which is used for finding the bugs from sc. contract will give
 ### Multsig functions
 Which is used when more then one admins in team. While the transaction from contract multisignatures are required.
 
+## Function Overview
+
 Function | Description
 --- | ---
 onlyWhileSale() | Modifier,  throws if called not during the crowdsale time frame
